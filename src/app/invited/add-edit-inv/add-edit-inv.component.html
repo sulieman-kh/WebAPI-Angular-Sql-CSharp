@@ -1,0 +1,20 @@
+<div class="form-form row" style="width: 60%;">
+    <label class="col-sm2 col-form-label">Invited Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="InvitedName" placeholder="Enter Invited Name">
+    </div>
+    <label class="col-sm2 col-form-label">Country</label>
+    <div class="col-sm-10">
+
+        <select class="form-control" [(ngModel)]="Country">
+          <option>--Select--</option>
+        <option *ngFor="let counName of CountryList">{{counName.CountryName}}</option>
+        </select>
+
+    </div>
+
+
+</div>
+
+<button class="btn btn-primary" (click)="addInvited()" *ngIf="inv.InvitedId==0">Add</button>
+<button class="btn btn-primary" (click)="updateInvited()" *ngIf="inv.InvitedId!=0">Update</button>

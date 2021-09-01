@@ -1,0 +1,9 @@
+<div class="form-form row">
+    <label class="col-sm2 col-form-label">Country Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="CountryName" placeholder="Enter Country Name">
+    </div>
+</div>
+
+<button class="btn btn-primary" (click)="addCountry()" *ngIf="coun.CountryId==0">Add</button>
+<button class="btn btn-primary" (click)="updateCountry()" *ngIf="coun.CountryId!=0">Update</button>

@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import {CountryComponent} from './country/country.component';
+import {InvitedComponent} from './invited/invited.component';
+
+const routes: Routes = [
+  {path:'invited',component:InvitedComponent},
+  {path:'country',component:CountryComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
