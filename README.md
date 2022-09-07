@@ -1,4 +1,5 @@
-# Angular1
+# Create a table and display the data Angular - SQL - C#
+## Options: Delete - add - edit 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
